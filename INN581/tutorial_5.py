@@ -182,19 +182,16 @@ second_file_name = input("Enter the second file's name: ")
 first_file = open(first_file_name, "r")
 second_file = open(second_file_name, "r")
 
-first_file_lines = first_file.readlines()
-second_file_lines = second_file.readlines()
-is_same = True
+while True:
+    line1  = first_file.readlines()
+    line2 = second_file.readlines()
 
-if len(first_file_lines) != len(second_file_lines):
-    print("No")
-    is_same = False
-else:
-    for i in range(len(first_file_lines)):
-        if first_file_lines[i] != second_file_lines[i]:
-            print("No")
-            is_same = False
-            break
-
-if is_same:
-    print("Yes")
+    if line1 == "" and line2 == "":
+        print("Yes")
+        break
+    elif (line1 != line2) or (line1 == "" or line2 == ""):
+        print("No")
+        print(line1)
+        print(line2)
+        break
+        
