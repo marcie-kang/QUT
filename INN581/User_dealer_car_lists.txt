@@ -1,0 +1,6 @@
+VIN: 123
+Brand: Hyun
+Model: d12
+Year: 2020
+Price: 200000.0
+Mileage: 0

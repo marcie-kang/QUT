@@ -1,5 +1,4 @@
-"""
-Question1
+"""Question1
 
 Modify the guessing-game program from Slide 29 in the file guess.py so that the
 user thinks of a number that the computer must guess. The computer must make
